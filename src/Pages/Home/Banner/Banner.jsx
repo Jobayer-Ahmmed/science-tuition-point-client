@@ -2,7 +2,7 @@ import banner from "../../../assets/video/banner.mp4"
 
 const Banner = () => {
   return (
-    <div className="video-background ">
+    <div className=" ">
     <video autoPlay muted>
       <source src={banner} type="video/mp4" />
       banner Image Not found

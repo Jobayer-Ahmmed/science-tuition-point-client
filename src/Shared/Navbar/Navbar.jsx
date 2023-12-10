@@ -1,41 +1,6 @@
-// import { Link, NavLink } from "react-router-dom";
-// const navlinks =
-//   <div className="md:flex md:gap-10">
-//     <li>
-//       <NavLink to="/">Home</NavLink>
-//     </li>
-//     <li>
-//       <NavLink>About</NavLink>
-//     </li>
-//     <li>
-//       <NavLink>Contact</NavLink>
-//     </li>
-//     <li>
-//       <NavLink>Our Goal</NavLink>
-//     </li>
-//   </div>
-
 import { Link, NavLink } from "react-router-dom";
+import {FaLongArrowAltRight} from "react-icons/fa"
 
-// const Navbar = () => {
-//   return (
-//     <div className="px-xPadding2 md:px-xPadding">
-//       <div className="navbar">
-//         <div className="navbar-start">
-//           <p className="text-xl font-bold">Logo</p>
-//         </div>
-//         <ul className="navbar-center text-xl font-semibold hidden md:block">{navlinks}</ul>
-//         <ul className="navbar-end">
-//           <li>
-//             <Link>Join Us</Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
 
 const Navbar = () => {
   const navlinks = (
@@ -55,7 +20,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="w-full px-xPadding2 md:px-xPadding bg-base-300 fixed bg-opacity-20">
+    <div className="w-full px-xPadding2 md:px-xPadding bg-base-300 fixed z-50 bg-opacity-20 text-white">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
@@ -90,8 +55,11 @@ const Navbar = () => {
               </ul>
             </div>
             <ul>
+              <li className="mr-6">
+                <Link className="text-xl cursor-pointer border-[2px] border-white rounded px-8 py-2 hover:bg-btnColor hover:border-transparent active:bg-transparent ">Login</Link>
+              </li>
               <li>
-                <Link>Join</Link>
+                <Link className="text-xl cursor-pointer border-[2px] border-white rounded px-8 py-2 hover:bg-btnColor hover:border-transparent active:bg-transparent ">Join <FaLongArrowAltRight className="inline ml-2"/></Link>
               </li>
             </ul>
           </div>

@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         clifford: '#da373d',
-        btnColor: "#ff6347",
+        btnColor: "#CD5C5C",
         hoverColor: "#ff4500",
         charcoalColor: "",
         steelGrayColor : "#71797E",
