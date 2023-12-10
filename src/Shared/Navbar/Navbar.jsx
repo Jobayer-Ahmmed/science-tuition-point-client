@@ -44,18 +44,18 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink>About</NavLink>
+        <NavLink to="/about">About</NavLink>
       </li>
       <li>
-        <NavLink>Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
       <li>
-        <NavLink>Our Goal</NavLink>
+        <NavLink to="/our-goal">Our Goal</NavLink>
       </li>
     </>
   );
   return (
-    <div className="px-xPadding2 md:px-xPadding bg-base-300">
+    <div className="w-full px-xPadding2 md:px-xPadding bg-base-300 fixed bg-opacity-20">
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
@@ -83,15 +83,15 @@ const Navbar = () => {
               </label>
             </div>
             <div className="flex-1">Logo</div>
-            <div className=" flex-none hidden lg:block">
-              <ul className="menu menu-horizontal">
+            <div className=" flex-none hidden lg:block md:mr-32">
+              <ul className="menu menu-horizontal text-xl font-medium">
                 {/* Navbar menu content here */}
                 {navlinks}
               </ul>
             </div>
             <ul>
               <li>
-                <Link>Join Us</Link>
+                <Link>Join</Link>
               </li>
             </ul>
           </div>
